@@ -1,5 +1,6 @@
 from . import signals  # noqa
 from .model import *  # noqa
+from . import polymodel  # noqa
 
 from google.appengine.ext.ndb import (
     Key,
@@ -21,5 +22,5 @@ from google.appengine.ext.ndb import (
     JsonProperty,
     PickleProperty,
     GenericProperty,
-    ComputedProperty)
+    ComputedProperty)  # noqa
 

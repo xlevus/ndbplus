@@ -1,13 +1,10 @@
-import mock
 import pytest
-
-import ndbplus
 
 import models
 
 
 @pytest.fixture(scope='module',
-                params=[models.Model, models.Expando],
+                params=[models.Model, models.Expando, models.Polymodel],
                 ids=lambda x: x._get_kind())
 def Model(request):
     return request.param

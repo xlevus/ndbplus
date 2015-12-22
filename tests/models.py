@@ -9,3 +9,7 @@ class Expando(ndb.Expando):
     a = ndb.IntegerProperty()
 
 
+class Polymodel(ndb.polymodel.PolyModel):
+
+    a = ndb.IntegerProperty()
+
